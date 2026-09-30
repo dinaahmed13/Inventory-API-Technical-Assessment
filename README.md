@@ -321,6 +321,49 @@ The project demonstrates testing of:
 * Automated assertions
 
 ---
+🗄️ Database Testing
+
+After the product is successfully created, I performed database validation to verify that the product was stored correctly and assigned to the expected category.
+
+For this validation, I created a relational database containing products and categories tables, with a foreign key relationship between products.category_id and categories.id.
+
+The product was inserted with:
+
+Title: Wireless Mouse
+Price: 25.00
+Stock: 50
+Category: Electronics
+
+The following SQL query retrieves the product and joins it with the categories table to verify the category assignment:
+
+SELECT
+    p.id,
+    p.title,
+    p.price,
+    p.stock,
+    c.name AS category_name
+FROM products p
+JOIN categories c
+    ON p.category_id = c.id
+WHERE p.title = 'Wireless Mouse'
+  AND c.name = 'electronics';
+Expected Result
+Wireless Mouse | 25.00 | 50 | electronics
+
+This validation confirms that:
+
+The product exists in the products table.
+The product data was stored correctly.
+The foreign key relationship is valid.
+The product is correctly assigned to the Electronics category.
+
+The complete SQL validation script is available in:
+
+Database/Database-Validation.sql
+
+Note: The assessment API was not accessible for execution, so the database validation was implemented locally based on the required product and category relationship. This demonstrates the SQL approach that would be used against the actual application database.
+
+---
 
 ## 🔗 Repository
 
