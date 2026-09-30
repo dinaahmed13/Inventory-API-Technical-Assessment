@@ -210,6 +210,9 @@ Inventory-API-Technical-Assessment/
 ├── Test-Scenarios/
 │   └── API Test Scenarios.xlsx
 │
+├── Database/
+│   └── Database-Validation.sql
+│
 └── README.md
 ```
 
