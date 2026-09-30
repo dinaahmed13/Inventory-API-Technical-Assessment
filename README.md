@@ -1,6 +1,6 @@
-# Inventory API - Technical Assessment
+# 📦 Inventory API - Technical Assessment
 
-## Project Overview
+## 📋 Project Overview
 
 This project demonstrates an API testing and automation approach for an inventory product creation scenario using **Postman**.
 
@@ -10,7 +10,7 @@ The implementation covers authentication, dynamic token handling, positive and n
 
 ---
 
-## Tools & Technologies
+## 🛠️ Tools & Technologies
 
 * **Postman** – API testing and automation
 * **JavaScript** – Postman test scripts and assertions
@@ -20,7 +20,7 @@ The implementation covers authentication, dynamic token handling, positive and n
 
 ---
 
-## Assessment API Requirement
+## 🎯 Assessment API Requirement
 
 The original assessment required testing an inventory item creation API:
 
@@ -56,7 +56,7 @@ Bearer <token>
 
 ---
 
-## Assumptions
+## 💡 Assumptions
 
 * The provided assessment API endpoint was not accessible for execution.
 * The main objective was assumed to be demonstrating the required API testing and Postman automation approach.
@@ -75,7 +75,7 @@ Bearer <token>
 
 ---
 
-## API Implementation
+## 🔌 API Implementation
 
 The testing scenarios were implemented using the following DummyJSON endpoint:
 
@@ -104,16 +104,16 @@ https://dummyjson.com
 
 ---
 
-## Test Scenarios
+## 🧪 Test Scenarios
 
 The following positive and negative scenarios were implemented in Postman:
 
-### Positive Scenarios
+### ✅ Positive Scenarios
 
 * **Add Product Item - Valid Data**
 * **Add Product Item - Minimum Valid Stock**
 
-### Negative Scenarios
+### ❌ Negative Scenarios
 
 * **Add Product - Missing Title**
 * **Add Product - Invalid Price**
@@ -124,9 +124,9 @@ The detailed test cases, expected results, actual results, and execution status 
 
 ---
 
-## Postman Automation
+## 🤖 Postman Automation
 
-### 1. Dynamic Authentication
+### 🔐 1. Dynamic Authentication
 
 A login request is used to generate the access token dynamically before executing protected API requests.
 
@@ -169,7 +169,7 @@ The generated token is then used as a **Bearer Token** for protected requests:
 
 ---
 
-### 2. Successful Product Creation Assertions
+### ✅ 2. Successful Product Creation Assertions
 
 The product creation request validates the successful response using assertions in the **Tests** tab.
 
@@ -199,7 +199,7 @@ pm.test("Product stock is correct", function () {
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 Inventory-API-Technical-Assessment/
@@ -215,15 +215,15 @@ Inventory-API-Technical-Assessment/
 
 ---
 
-## How to Run
+## 🚀 How to Run
 
-### Prerequisites
+### 📌 Prerequisites
 
 * Install **Postman**
 * Internet connection
 * Git (optional, if cloning the repository)
 
-### Step 1: Clone the Repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/dinaahmed13/Inventory-API-Technical-Assessment.git
@@ -231,7 +231,7 @@ git clone https://github.com/dinaahmed13/Inventory-API-Technical-Assessment.git
 
 Or download the repository as a ZIP file from GitHub.
 
-### Step 2: Import the Postman Collection
+### 2️⃣ Import the Postman Collection
 
 Open Postman:
 
@@ -243,7 +243,7 @@ Select:
 Postman/Inventory API - Technical Assessment.postman_collection.json
 ```
 
-### Step 3: Configure the Environment
+### 3️⃣ Configure the Environment
 
 Create or select a Postman environment containing:
 
@@ -251,17 +251,16 @@ Create or select a Postman environment containing:
 | --------- | ----------------------- |
 | `baseUrl` | `https://dummyjson.com` |
 | `token`   | Leave empty             |
-|           |                         |
 
 The `token` is generated automatically by the Login request.
 
-### Step 4: Run the Collection
+### 4️⃣ Run the Collection
 
 Open the collection in Postman and run the requests using **Collection Runner**.
 
 The authentication request should be executed before protected requests so that the access token is available.
 
-### Step 5: Review Test Results
+### 5️⃣ Review Test Results
 
 Postman automatically executes the assertions in the **Tests** tab and displays the results for each request.
 
@@ -273,9 +272,9 @@ Test-Scenarios/API Test Scenarios.xlsx
 
 ---
 
-## Project Contents
+## 📦 Project Contents
 
-### Postman Collection
+### 📮 Postman Collection
 
 Contains:
 
@@ -289,7 +288,7 @@ Contains:
 * API chaining
 * Automated assertions
 
-### Excel Test Scenarios
+### 📊 Excel Test Scenarios
 
 Contains:
 
@@ -304,7 +303,7 @@ Contains:
 
 ---
 
-## Key Testing Areas
+## 🔍 Key Testing Areas
 
 The project demonstrates testing of:
 
@@ -323,7 +322,7 @@ The project demonstrates testing of:
 
 ---
 
-## Repository
+## 🔗 Repository
 
 **GitHub Repository:**
 
