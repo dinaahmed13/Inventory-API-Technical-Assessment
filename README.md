@@ -206,6 +206,7 @@ Inventory-API-Technical-Assessment/
 │
 ├── Postman/
 │   └── Inventory API - Technical Assessment.postman_collection.json
+    └── Inventory API - QA.postman_environment.json
 │
 ├── Test-Scenarios/
 │   └── API Test Scenarios.xlsx
