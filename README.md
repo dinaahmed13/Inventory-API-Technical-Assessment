@@ -1,10 +1,10 @@
-# 📦 Inventory API - Technical Assessment
+# 📦 Inventory API - Testing
 
 ## 📋 Project Overview
 
 This project demonstrates an API testing and automation approach for an inventory product creation scenario using **Postman**.
 
-The original assessment provided an inventory API endpoint for creating a new item. Since the provided API endpoint was not accessible for execution, **DummyJSON** was selected as a public test API to demonstrate the required API testing and Postman automation approach in a realistic API environment.
+The original provided an inventory API endpoint for creating a new item. Since the provided API endpoint was not accessible for execution, **DummyJSON** was selected as a public test API to demonstrate the required API testing and Postman automation approach in a realistic API environment.
 
 The implementation covers authentication, dynamic token handling, positive and negative test scenarios, automated assertions.
 
